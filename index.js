@@ -15,7 +15,7 @@ window.onload = function () {
         let position = document.getElementById(blockID).getBoundingClientRect();
 
         window.scrollTo({
-          top: position.top + window.scrollY - heightMenu - 80,
+          top: position.top + window.scrollY - heightMenu - 10,
           left: position.left,
           behavior: "smooth"
         })
@@ -104,6 +104,7 @@ window.onload = function () {
           popupAnswer('Ожидайте звонка')
         } else {
           console.log('что-то пошло не так');
+          form.parentElement.style.display = 'none';
           popupAnswer('Что-то пошло не так. Попробуйте снова.')
         }
       }

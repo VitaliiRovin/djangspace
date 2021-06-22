@@ -43,15 +43,31 @@
   }
 }
 
-.popup__close:after {
-  content: "\1F7AA";
+.popup__close {
+  z-index: 20;
   position: absolute;
-  z-index: 30;
-  top: rem(10px);
-  right: rem(15px);
-  font-size: rem(30px);
-  color: $white;
+  top: 5%;
+  right: rem(20px);
+  height: rem(18px);
+  width: rem(20px);
   cursor: pointer;
+
+  span {
+    width: rem(20px);
+    height: rem(3px);
+    display: block;
+    position: absolute;
+    top: 50%;
+    background-color: $white;
+
+    &:first-child {
+      transform: rotate(45deg);
+    }
+
+    &:last-child {
+      transform: rotate(-45deg);
+    }
+  }
 }
 
 .popup__title {

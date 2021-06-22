@@ -118,18 +118,44 @@
   }
 }
 
-.form__decorate._error:after {
-  content: "\1F7AA";
+.form__decorate._error {
   position: absolute;
-  top: 50%;
-  right: rem(20px);
-  font-size: rem(20px);
-  color: $inputWrong;
-  transform: translateY(-50%);
+  top: rem(18px);
+  right: rem(18px);
+  z-index: 20;
+  height: rem(16px);
+  width: rem(16px);
+
+  @include tablets {
+    top: rem(13px);
+    right: rem(10px);
+  }
+
+  span {
+    width: rem(16px);
+    height: rem(2px);
+    display: block;
+    position: absolute;
+    top: 50%;
+    background-color: $inputWrong;
+
+    &:first-child {
+      transform: rotate(45deg);
+    }
+
+    &:last-child {
+      transform: rotate(-45deg);
+    }
+
+  }
 }
 
 .form__input--textarea + .form__decorate._error:after {
   top: rem(30px);
+
+  @include tablets {
+    top: rem(20px);
+  }
 }
 
 .form__decorate._success:after {

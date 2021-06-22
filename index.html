@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link rel="stylesheet" href="css/main.css">
@@ -76,7 +76,7 @@
 
   <article class="welcome" id="a_welcome">
     <div class="welcome-container container">
-      <div class="welcome__title title">Давайте знакомиться</div>
+      <h2 class="welcome__title title">Давайте знакомиться</h2>
       <div class="welcome__columns">
         <div class="welcome__columns-left">
           <p>
@@ -102,7 +102,7 @@
 
   <article class="how" id="a_how">
     <div class="how-container container">
-      <div class="how__title title">Как мы работаем</div>
+      <h2 class="how__title title">Как мы работаем</h2>
       <ul class="how__unit-list">
         <li class="how__unit-item">
           <div class="how__unit-wrap">
@@ -155,7 +155,7 @@
 
   <article class="why" id="a_why">
     <div class="why-container container">
-      <div class="why__title title"></div>
+      <h2 class="why__title title"></h2>
       <ul class="why__list">
         <li class="why__item">
           <div class="why__logo">
@@ -199,7 +199,7 @@
 
   <article class="tariffs" id="a_tariffs">
     <div class="tariffs-container container">
-      <div class="tariffs__title title">Тарифы и формы договора</div>
+      <h2 class="tariffs__title title">Тарифы и формы договора</h2>
       <ul class="tariffs__unit-list">
         <li class="tariffs__unit-item">
           <div class="tariffs__unit-wrap">
@@ -231,7 +231,7 @@
 
   <article class="tools">
     <div class="tools-container container">
-      <div class="tools__title title">Инстурументы, с которыми мы работаем</div>
+      <h2 class="tools__title title">Инстурументы, с которыми мы работаем</h2>
       <ul class="tools__list">
         <li class="tools__item">
           <img src="./img/svg/python.svg" alt="Описывающая картинка" class="tools__img">
@@ -248,24 +248,33 @@
 
   <article class="consultation" id="a_consultation">
     <div class="consultation-container container">
-      <div class="consultation__title title">Бесплатная консультация</div>
+      <h2 class="consultation__title title">Бесплатная консультация</h2>
       <div class="consultation__columns">
         <div class="consultation__left">
           <form action="#" class="form">
             <div class="form__row">
               <div class="form__wrap">
                 <input type="text" class="form__input _req _name" placeholder="Имя" name="name">
-                <div class="form__decorate"></div>
+                <div class="form__decorate">
+                  <span></span>
+                  <span></span>
+                </div>
               </div>
             </div>
             <div class="form__row">
               <div class="form__wrap">
                 <input type="text" class="form__input _req _tel" placeholder="Телефон" name="tel">
-                <div class="form__decorate"></div>
+                <div class="form__decorate">
+                  <span></span>
+                  <span></span>
+                </div>
               </div>
               <div class="form__wrap">
                 <input type="text" class="form__input _req _email" placeholder="Электронная почта" name="email">
-                <div class="form__decorate"></div>
+                <div class="form__decorate">
+                  <span></span>
+                  <span></span>
+                </div>
               </div>
             </div>
             <div class="form__row">
@@ -273,7 +282,10 @@
                 <textarea class="form__input _req _text form__input--textarea"
                           placeholder="Расскажите о своем проекте или задайте интересующие вопросы"
                           name="text"></textarea>
-                <div class="form__decorate"></div>
+                <div class="form__decorate">
+                  <span></span>
+                  <span></span>
+                </div>
               </div>
             </div>
             <div class="form__row">
@@ -323,7 +335,10 @@
         <button class="popup__btn btn" type="submit">Отправить</button>
       </div>
     </div>
-    <div class="popup__close"></div>
+    <div class="popup__close">
+      <span></span>
+      <span></span>
+    </div>
   </form>
 </div>
 

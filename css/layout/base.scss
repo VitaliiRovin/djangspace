@@ -88,3 +88,7 @@ button {
     max-width: 280px;
   }
 }
+
+input, textarea, select {
+  -webkit-appearance: none;
+}

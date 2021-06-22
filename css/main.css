@@ -376,6 +376,9 @@ button {
     .container {
       max-width: 280px; } }
 
+input, textarea, select {
+  -webkit-appearance: none; }
+
 .title {
   font-style: normal;
   font-weight: bold;
@@ -420,8 +423,8 @@ button {
       text-align: center; } }
   .btn:hover {
     background-color: #254CD4;
-    -webkit-box-shadow: 0 0 13px 5px rgba(109, 22, 223, 0.25);
-    box-shadow: 0 0 13px 5px rgba(109, 22, 223, 0.25); }
+    -webkit-box-shadow: 0 0 27px 13px rgba(0, 34, 155, 0.05);
+    box-shadow: 0 0 27px 13px rgba(0, 34, 155, 0.05); }
 
 .header {
   background-color: #040119;
@@ -1254,19 +1257,38 @@ button {
         margin-left: 0;
         margin-top: 0.5rem; } }
 
-.form__decorate._error:after {
-  content: "\1F7AA";
+.form__decorate._error {
   position: absolute;
-  top: 50%;
-  right: 1.25rem;
-  font-size: 1.25rem;
-  color: #FF6666;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%); }
+  top: 1.125rem;
+  right: 1.125rem;
+  z-index: 20;
+  height: 1rem;
+  width: 1rem; }
+  @media screen and (max-width: 768px) {
+    .form__decorate._error {
+      top: 0.8125rem;
+      right: 0.625rem; } }
+  .form__decorate._error span {
+    width: 1rem;
+    height: 0.125rem;
+    display: block;
+    position: absolute;
+    top: 50%;
+    background-color: #FF6666; }
+    .form__decorate._error span:first-child {
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg); }
+    .form__decorate._error span:last-child {
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg); }
 
 .form__input--textarea + .form__decorate._error:after {
   top: 1.875rem; }
+  @media screen and (max-width: 768px) {
+    .form__input--textarea + .form__decorate._error:after {
+      top: 1.25rem; } }
 
 .form__decorate._success:after {
   content: "L";
@@ -1394,15 +1416,29 @@ button {
     .popup__svg {
       max-width: 15.625rem; } }
 
-.popup__close:after {
-  content: "\1F7AA";
+.popup__close {
+  z-index: 20;
   position: absolute;
-  z-index: 30;
-  top: 0.625rem;
-  right: 0.9375rem;
-  font-size: 1.875rem;
-  color: #FFF;
+  top: 5%;
+  right: 1.25rem;
+  height: 1.125rem;
+  width: 1.25rem;
   cursor: pointer; }
+  .popup__close span {
+    width: 1.25rem;
+    height: 0.1875rem;
+    display: block;
+    position: absolute;
+    top: 50%;
+    background-color: #FFF; }
+    .popup__close span:first-child {
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg); }
+    .popup__close span:last-child {
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg); }
 
 .popup__title {
   color: #FFF;
@@ -1506,7 +1542,7 @@ button {
   display: grid;
   place-items: center;
   height: 18px;
-  width: 25px;
+  width: 20px;
   cursor: pointer;
   overflow: hidden; }
   .hamburger__icon span {
@@ -1519,14 +1555,6 @@ button {
     transition: all 0.5s ease-in-out;
     -ms-grid-column-align: end;
     justify-self: end; }
-  .hamburger__icon span:nth-child(1) {
-    width: 23px; }
-  .hamburger__icon span:nth-child(2) {
-    width: 15px; }
-  .hamburger__icon:hover span:nth-child(1) {
-    width: 20px; }
-  .hamburger__icon:hover span:nth-child(2) {
-    width: 20px; }
 
 .hamburger__icon._active + .hamburger__navigation {
   display: -webkit-box;
