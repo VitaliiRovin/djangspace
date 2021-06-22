@@ -52,6 +52,10 @@
   width: rem(20px);
   cursor: pointer;
 
+  @include tablets-min {
+    top: 10%;
+  }
+
   span {
     width: rem(20px);
     height: rem(3px);
