@@ -1,0 +1,155 @@
+.form {
+  max-width: rem(720px);
+
+  @include laptop {
+    max-width: 100%;
+  }
+}
+
+.form__input {
+  width: 100%;
+  border: 1px solid $inputDefault;
+  border-radius: rem(4px);
+  padding: rem(16px);
+  outline: none;
+  transition: .2s;
+
+  @include tablets {
+    padding: rem(11px);
+  }
+
+  &::placeholder {
+    color: $textGray;
+    font-weight: normal;
+    font-size: rem(14px);
+
+    @include tablets-min {
+      font-size: rem(12px);
+    }
+  }
+
+  &:hover {
+    border: 1px solid $inputHover;
+  }
+
+  &:focus {
+    border: 1px solid $inputFocused;
+  }
+}
+
+.form__row:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+}
+
+.form__row {
+  margin-bottom: rem(8px);
+
+  h3 {
+    font-weight: normal;
+    font-size: rem(14px);
+    max-width: rem(300px);
+    line-height: rem(18px);
+
+    @include tablets-min {
+      font-size: rem(12px);
+      line-height: rem(14px);
+      margin-bottom: rem(15px);
+    }
+  }
+
+  &:last-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0;
+
+    @include tablets-min {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &:nth-child(2) {
+    @include tablets-min {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &:nth-child(3) {
+    @include tablets {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.form__input--textarea {
+  height: rem(240px);
+  resize: none;
+
+  @include tablets {
+    height: rem(200px);
+  }
+  @include tablets-min {
+    height: rem(120px);
+  }
+}
+
+.form__btn {
+  padding: rem(25px) rem(60px);
+
+  @include tablets {
+    padding: rem(15px) rem(30px);
+  }
+}
+
+.form__wrap {
+  width: 100%;
+  position: relative;
+
+  & + .form__wrap {
+    margin-left: rem(8px);
+
+    @include tablets-min {
+      margin-left: 0;
+      margin-top: rem(8px);
+    }
+  }
+}
+
+.form__decorate._error:after {
+  content: "\1F7AA";
+  position: absolute;
+  top: 50%;
+  right: rem(20px);
+  font-size: rem(20px);
+  color: $inputWrong;
+  transform: translateY(-50%);
+}
+
+.form__input--textarea + .form__decorate._error:after {
+  top: rem(30px);
+}
+
+.form__decorate._success:after {
+  content: "L";
+  position: absolute;
+  top: 50%;
+  right: rem(20px);
+  font-size: rem(20px);
+  color: $inputSuccess;
+  transform: translateY(-50%) scale(-1, 1) rotate(-45deg);
+}
+
+.form__input--textarea + .form__decorate._success:after {
+  top: rem(25px);
+}
+
+.form__input._success {
+  border: 1px solid $inputSuccess;
+}
+
+.form__input._error {
+  border: 1px solid $inputWrong;
+}

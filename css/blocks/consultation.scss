@@ -1,0 +1,84 @@
+.consultation {
+  margin-bottom: rem(180px);
+
+  @include tablets {
+    margin-bottom: rem(70px);
+  }
+  @include tablets-min {
+    margin-bottom: rem(40px);
+  }
+}
+
+.consultation__title {
+  margin-bottom: rem(52px);
+
+  @include tablets {
+    margin-bottom: rem(44px);
+  }
+  @include tablets-min {
+    margin-bottom: rem(27px);
+  }
+}
+
+.consultation__columns {
+  display: flex;
+  flex-direction: row;
+
+  @include laptop {
+    flex-direction: column-reverse;
+  }
+}
+
+.consultation__right {
+  max-width: rem(370px);
+  margin-right: rem(45px);
+
+  @include laptop {
+    margin-bottom: rem(50px);
+  }
+  @include tablets {
+    margin-bottom: rem(25px);
+  }
+}
+
+.consultation__left {
+  flex: 1;
+
+  @include laptop {
+    margin-right: 0;
+  }
+}
+
+.consultation {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+
+  h3 {
+    font-weight: 500;
+    font-size: rem(31px);
+    color: $darkViolet;
+    margin-bottom: rem(24px);
+    letter-spacing: rem(.5px);
+
+    @include laptop {
+      font-weight: 400;
+      font-size: rem(18px);
+      margin-bottom: 0;
+    }
+    @include tablets-min {
+      font-size: rem(14px);
+      line-height: rem(18px);
+    }
+  }
+
+  p {
+    font-weight: normal;
+    font-size: rem(18px);
+    color: $gray;
+
+    @include tablets-min {
+      font-size: rem(14px);
+      line-height: rem(18px);
+    }
+  }
+}

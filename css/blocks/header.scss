@@ -1,0 +1,44 @@
+.header {
+  background-color: $darkViolet;
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  width: 100%;
+
+  @include tablets-min {
+    display: none;
+  }
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav {
+  padding: rem(10px) 0;
+
+  @include tablets {
+    padding: rem(6px) 0;
+  }
+}
+
+.header__logo {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: rem(30px);
+  height: rem(30px);
+
+  @include tablets {
+    width: rem(15px);
+    height: rem(15px);
+  }
+}
+
+.header__svg {
+  width: 100%;
+  height: 100%;
+}

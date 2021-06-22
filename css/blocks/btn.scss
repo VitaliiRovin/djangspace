@@ -1,0 +1,26 @@
+.btn {
+  white-space: nowrap;
+  color: $white;
+  font-weight: normal;
+  display: block;
+  background-color: $mainBlue;
+  border-radius: rem(3px);
+  transition: .5s;
+  font-size: rem(24px);
+  padding: rem(20px) rem(66px);
+
+  @include tablets {
+    font-size: rem(14px);
+    padding: rem(14px) rem(30px);
+  }
+  @include tablets-min {
+    font-size: rem(18px);
+    width: 100%;
+    text-align: center;
+  }
+
+  &:hover {
+    background-color: $backBlue;
+    box-shadow: 0 0 13px 5px rgba(109, 22, 223, 0.25);
+  }
+}

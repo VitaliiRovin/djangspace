@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+<header class="header" id="header">
+  <div class="header__container container">
+    <a class="header__logo" href="#">
+      <img class="header__svg" src="./img/svg/logo.svg" alt="Логотип">
+    </a>
+    <div class="header__nav">
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#a_welcome" class="navigation__link">О нас</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#a_how" class="navigation__link">Услуги</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#a_tariffs" class="navigation__link">Тарифы и цены</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#a_consultation" class="navigation__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+</header>
+
+<div class="hamburger">
+  <div class="hamburger__icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <nav class="hamburger__navigation">
+    <ul class="hamburger__list">
+      <li class="hamburger__item">
+        <a href="#a_welcome" class="hamburger__link">О нас</a>
+      </li>
+      <li class="hamburger__item">
+        <a href="#a_how" class="hamburger__link">Услуги</a>
+      </li>
+      <li class="hamburger__item">
+        <a href="#a_tariffs" class="hamburger__link">Тарифы и цены</a>
+      </li>
+      <li class="hamburger__item">
+        <a href="#a_consultation" class="hamburger__link">Контакты</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<main class="main">
+  <article class="front">
+    <div class="front-container container">
+      <div class="front__logo">
+        <img class="front__img" src="./img/svg/nameLogo.svg" alt="Стилизованное имя компании">
+      </div>
+      <h1>Обеспечим техническое сопровождение вашего проекта на Python</h1>
+      <div class="front__btn-wrap">
+        <div class="front__btn btn">Оставить заявку</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="welcome" id="a_welcome">
+    <div class="welcome-container container">
+      <div class="welcome__title title">Давайте знакомиться</div>
+      <div class="welcome__columns">
+        <div class="welcome__columns-left">
+          <p>
+            Мы умеем и любим создавать сервисы, которые работают 24/7.
+            У нас за плечами многолетний опыт промышленной разработки проектов разной сложности.
+          </p>
+          <p>
+            Люди — это наш главный ресурс. А основной инструмент — язык программирования python, фреймворк Django и база
+            данных
+            в PostgreSQL. Но мы не ограничиваемся набором одних технологий:
+            всё зависит от поставленных задач.
+          </p>
+        </div>
+        <div class="welcome__columns-right">
+          <picture>
+            <source media="(min-width: 1020px)" srcset="./img/svg/notebook.svg">
+            <img class="welcome__svg" src="" alt="Картинка секции">
+          </picture>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article class="how" id="a_how">
+    <div class="how-container container">
+      <div class="how__title title">Как мы работаем</div>
+      <ul class="how__unit-list">
+        <li class="how__unit-item">
+          <div class="how__unit-wrap">
+            <h3>Консультация</h3>
+            <ul class="how__list">
+              <li class="how__item">Спроектируем архитектуру проекта</li>
+              <li class="how__item">Напишем техническое задание</li>
+              <li class="how__item">Выступим в роли CTO для вашего проекта</li>
+              <li class="how__item">Составим roadmap и спланируем время разработки</li>
+            </ul>
+          </div>
+        </li>
+        <li class="how__unit-item">
+          <div class="how__unit-wrap">
+            <h3>Разработка</h3>
+            <ul class="how__list">
+              <li class="how__item">Создадим сервис по вашему ТЗ на python</li>
+              <li class="how__item">Сделаем MVP</li>
+              <li class="how__item">Спроектируем схему базы данных</li>
+              <li class="how__item">Автоматизируем рутинные и бизнес-процессы</li>
+              <li class="how__item">Сделаем интеграцию с другим сервисом</li>
+            </ul>
+          </div>
+        </li>
+        <li class="how__unit-item">
+          <div class="how__unit-wrap">
+            <h3>DevOps</h3>
+            <ul class="how__list">
+              <li class="how__item">Запустим ваш проект в продакшн</li>
+              <li class="how__item">Сконфигурим сервер</li>
+              <li class="how__item">Настроим nginx и другое программное обеспечение</li>
+            </ul>
+          </div>
+        </li>
+        <li class="how__unit-item">
+          <div class="how__unit-wrap">
+            <h3>Сопровождение</h3>
+            <ul class="how__list">
+              <li class="how__item">Отмасштабируем проект для новых нагрузок</li>
+              <li class="how__item">Оптимизируем скорость работы</li>
+              <li class="how__item">Сделаем ревью программного кода</li>
+              <li class="how__item">Напишем тесты</li>
+              <li class="how__item">Проведём нагрузочное тестирование</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="why" id="a_why">
+    <div class="why-container container">
+      <div class="why__title title"></div>
+      <ul class="why__list">
+        <li class="why__item">
+          <div class="why__logo">
+            <img src="./img/icons/why1.png" alt="Описывающая картинка" class="why__img">
+          </div>
+          <h3>Большой опыт</h3>
+          <p>Мы много лет в разработке.
+            Разработчики нашей команды учавствовали в построении сервисов в таких крупных компаниях как Mail.ru Group,
+            Yandex, Rambler, Afisha.ru.
+          </p>
+        </li>
+        <li class="why__item">
+          <div class="why__logo">
+            <img src="./img/icons/why2.png" alt="Описывающая картинка" class="why__img">
+          </div>
+          <h3>Крупные проекты</h3>
+          <p>Cпециализируемся
+            на крупных проектах, разрабатываем системы любой сложности и пишем переиспользуемый
+            код с тестами.</p>
+        </li>
+        <li class="why__item">
+          <div class="why__logo">
+            <img src="./img/icons/why3.png" alt="Описывающая картинка" class="why__img">
+          </div>
+          <h3>Системный подход</h3>
+          <p>У нас есть комплексный подход в решении поставленных задач и мы хорошо ориентируемся
+            в мире открытого ПО.</p>
+        </li>
+        <li class="why__item">
+          <div class="why__logo">
+            <img src="./img/icons/why4.png" alt="Описывающая картинка" class="why__img">
+          </div>
+          <h3>Бизнес-стратегия</h3>
+          <p>Мы не только занимаемся разработкой, но и помогаем
+            в бизнесе, вникая
+            в продуктовую составляющую.</p>
+        </li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="tariffs" id="a_tariffs">
+    <div class="tariffs-container container">
+      <div class="tariffs__title title">Тарифы и формы договора</div>
+      <ul class="tariffs__unit-list">
+        <li class="tariffs__unit-item">
+          <div class="tariffs__unit-wrap">
+            <h3>Time & material</h3>
+            <p>Почасовая оплата и работа короткими итерациями</p>
+            <ul class="tariffs__list">
+              <li class="tariffs__item">Разработка (web, mob) — от 1 ₽/час</li>
+              <li class="tariffs__item">Создание архитектуры — от 1 ₽/час</li>
+              <li class="tariffs__item">Разработка MVP — от 1₽</li>
+              <li class="tariffs__item">DevOps — от 1₽/час</li>
+            </ul>
+          </div>
+        </li>
+        <li class="tariffs__unit-item">
+          <div class="tariffs__unit-wrap">
+            <h3>Fixed price</h3>
+            <p>Фиксированная цена за согласованный объем работ</p>
+            <ul class="tariffs__list">
+              <li class="tariffs__item">Выбираем модель взаимодействия</li>
+              <li class="tariffs__item">Проводим оценку объема работы</li>
+              <li class="tariffs__item">Рассчитываем итоговую стоимость</li>
+              <li class="tariffs__item">Можем отталкиваться от вашего бюджет</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="tools">
+    <div class="tools-container container">
+      <div class="tools__title title">Инстурументы, с которыми мы работаем</div>
+      <ul class="tools__list">
+        <li class="tools__item">
+          <img src="./img/svg/python.svg" alt="Описывающая картинка" class="tools__img">
+        </li>
+        <li class="tools__item">
+          <img src="./img/icons/django.png" alt="Описывающая картинка" class="tools__img">
+        </li>
+        <li class="tools__item">
+          <img src="./img/icons/kisspng.png" alt="Описывающая картинка" class="tools__img">
+        </li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="consultation" id="a_consultation">
+    <div class="consultation-container container">
+      <div class="consultation__title title">Бесплатная консультация</div>
+      <div class="consultation__columns">
+        <div class="consultation__left">
+          <form action="#" class="form">
+            <div class="form__row">
+              <div class="form__wrap">
+                <input type="text" class="form__input _req _name" placeholder="Имя" name="name">
+                <div class="form__decorate"></div>
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="form__wrap">
+                <input type="text" class="form__input _req _tel" placeholder="Телефон" name="tel">
+                <div class="form__decorate"></div>
+              </div>
+              <div class="form__wrap">
+                <input type="text" class="form__input _req _email" placeholder="Электронная почта" name="email">
+                <div class="form__decorate"></div>
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="form__wrap">
+                <textarea class="form__input _req _text form__input--textarea"
+                          placeholder="Расскажите о своем проекте или задайте интересующие вопросы"
+                          name="text"></textarea>
+                <div class="form__decorate"></div>
+              </div>
+            </div>
+            <div class="form__row">
+              <h3>Нажимая на кнопку, вы даете согласие на обработку персональны данных.</h3>
+              <button class="form__btn btn" type="submit">Оставить заявку</button>
+            </div>
+          </form>
+        </div>
+        <div class="consultation__right">
+          <h3>Оставьте заявку </h3>
+          <p>и мы свяжемся с вами, чтобы провести бесплатную консультацию,
+            оценить стоимость работ и ответить
+            на все вопросы.</p>
+        </div>
+      </div>
+    </div>
+  </article>
+</main>
+
+<footer class="footer">
+  <div class="footer__container container">
+    <a class="footer__name" href="#">
+      <img class="footer__svg" src="./img/svg/nameLogo.svg" alt="Стилизованное имя компании">
+    </a>
+    <a class="footer__facebook" href="#">
+      <img class="footer__svg" src="./img/svg/book.svg" alt="Лого Facebook">
+    </a>
+  </div>
+</footer>
+
+<div class="popup">
+  <form action="#" class="popup__form">
+    <div class="popup__wrap">
+      <div class="popup__row">
+        <img class="popup__svg" src="./img/svg/nameLogo.svg" alt="Стилизованное имя компании">
+      </div>
+      <div class="popup__row">
+        <div class="popup__title">Оставте ваш номер телефона <br>и мы свяжемся с вами</div>
+      </div>
+      <div class="popup__row">
+        <input type="text" class="popup__input _name" placeholder="Имя" name="name">
+      </div>
+      <div class="popup__row">
+        <input type="text" class="popup__input _tel" placeholder="Телефон(обязательно)" name="tel">
+      </div>
+      <div class="popup__row">
+        <button class="popup__btn btn" type="submit">Отправить</button>
+      </div>
+    </div>
+    <div class="popup__close"></div>
+  </form>
+</div>
+
+<div class="popupAnswer">
+  <div class="popupAnswer__wrap">
+    <div class="popupAnswer__title"></div>
+  </div>
+</div>
+
+<script src="libs/jquery-3.6.0.min.js"></script>
+<script src="libs/jquery.maskedinput.min.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+.front {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("../img/bg/back-main.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: rem(97px);
+
+  @include tablets-min {
+    margin-bottom: rem(55px);
+  }
+
+  h1 {
+    font-weight: normal;
+    color: $white;
+    margin-bottom: rem(50px);
+    font-size: rem(24px);
+    line-height: rem(32px);
+    max-width: rem(500px);
+
+    @include tablets {
+      font-size: rem(18px);
+      line-height: rem(20px);
+      max-width: rem(350px);
+      margin-bottom: rem(30px);
+    }
+    @include tablets-min {
+      margin-bottom: rem(40px);
+      margin-left: rem(10px);
+    }
+    @include phones {
+      font-size: rem(16px);
+      max-width: rem(200px);
+    }
+  }
+}
+
+.front__btn-wrap {
+  display: flex;
+}
+
+.front__logo {
+  margin-bottom: rem(10px);
+  margin-left: -0.5%;
+  max-width: rem(790px);
+
+  @include laptop-min {
+    max-width: rem(600px);
+  }
+  @include tablets {
+    max-width: rem(400px);
+    margin-bottom: rem(25px);
+  }
+  @include tablets-min {
+    margin-bottom: rem(57px);
+    margin-left: rem(10px);
+  }
+  @include phones {
+    max-width: 260px;
+  }
+}
+
+.front__img {
+  width: 100%;
+}
+
+.front-container {
+  margin-top: rem(145px);
+
+  @include tablets {
+    margin-top: rem(10px);
+  }
+}
+
+.front__btn {
+  cursor: pointer;
+
+  @include tablets-min {
+    padding: rem(10px) 0;
+  }
+}

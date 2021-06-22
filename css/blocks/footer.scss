@@ -1,0 +1,41 @@
+.footer {
+  background-color: $darkViolet;
+}
+
+.footer__container {
+  height: rem(50px);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  @include tablets-min {
+    height: rem(30px);
+    justify-content: space-between;
+  }
+}
+
+.footer__name {
+  width: rem(160px);
+  height: rem(25px);
+  margin-right: rem(30px);
+  display: flex;
+  align-items: center;
+
+  @include laptop-min {
+    width: rem(130px);
+    height: rem(20px);
+  }
+  @include tablets-min {
+    width: rem(80px);
+    height: rem(13px);
+  }
+}
+
+.footer__svg {
+  height: 100%;
+}
+
+.footer__facebook {
+  width: rem(20px);
+  height: rem(20px);
+}
