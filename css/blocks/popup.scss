@@ -53,7 +53,7 @@
   cursor: pointer;
 
   @include tablets-min {
-    top: 10%;
+    top: rem(70px);
   }
 
   span {

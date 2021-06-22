@@ -1426,7 +1426,7 @@ input, textarea, select {
   cursor: pointer; }
   @media screen and (max-width: 480px) {
     .popup__close {
-      top: 10%; } }
+      top: 4.375rem; } }
   .popup__close span {
     width: 1.25rem;
     height: 0.1875rem;
